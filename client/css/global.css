@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #1a1a1b;
+    --faded-primary-color: #dedede;
+    --gray-font: #535353;
+    --secondary-color: #f5f2eb;
+    --font-size: 16px;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    border-radius: 0;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 20px auto;
+}
+
+hr.light {
+    height: 2px;
+    background-color: var(--faded-primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.card {
+    padding: 1rem;
+    width: fit-content;
+    max-width: 40rem;
+    display: block;
+}
+
+.card.primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.card.secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-white {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--faded-primary-color);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+small {
+    color: gray;
+}
+
+h5 {
+    color: var(--gray-font);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.gray {
+    color: var(--gray-font);
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+input {
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+    border: 2px solid var(--primary-color);
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex button {
+    margin-left: 5px;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.float-right {
+    float: right;
+}
+
+.div-center {
+    text-align: center;
+}

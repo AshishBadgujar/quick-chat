@@ -1,0 +1,50 @@
+.main {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    margin: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.header {
+    height: 3rem;
+}
+
+.left {
+    padding: 1rem;
+}
+
+.right {
+    padding: 1rem;
+}
+
+.users-box {
+    height: 36rem;
+    overflow-y: auto;
+}
+
+.msg-box {
+    height: 34rem;
+    overflow-y: auto;
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 0.5rem;
+    /* Add spacing between messages */
+}
+
+
+#nickname {
+    width: 23rem;
+    overflow-x: hidden;
+}
+
+.users-box ul li {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.users-box ul li:hover {
+    background-color: #f5f2eb;
+}

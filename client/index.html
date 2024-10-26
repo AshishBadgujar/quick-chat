@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="header flex">
+                <h1 id="nickname">xyz</h1>
+                <button id="add-group">+</button>
+            </div>
+            <hr>
+            <br>
+            <h5>Groups</h5>
+            <br>
+            <div class="users-box">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="right div-center" id="placeholder-image">
+            <img src="assets/chat.svg" />
+        </div>
+        <div class="right" id="group-chat-box">
+            <div class="header">
+                <h3 id="group-heading">Ashish </h3>
+                <small>Online</small>
+            </div>
+            <hr>
+            <div class="msg-box" id="msg-box"></div>
+            <hr class="light">
+            <div class="flex">
+                <input id="msg-input" type="text" placeholder="Type something...">
+                <button id="send" style="padding: 0 2rem;">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/main.js"></script>
+
+</html>
